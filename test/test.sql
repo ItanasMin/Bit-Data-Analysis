@@ -1,3 +1,4 @@
 USE sakila;
 
-SELECT * FROM film;
+SELECT * FROM film
+where length > 100;
