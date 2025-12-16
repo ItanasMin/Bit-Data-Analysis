@@ -3,23 +3,25 @@
 -- Sales_SalesOrderDetail, Sales_SalesTerritory ir Sales_SalesOrderHeader lenteles. 
 -- 1. Susiek produktus su jų subkategorijomis, kategorijomis, teritorijomis ir pardavimo kanalais.
 SELECT 
-	pp.productid,
-    pp.name produktas,
-	ps.name Subcategory,
+	pc.ProductCategoryID,
     pc.name Category,
     st.name Territory,
     CASE 
 		WHEN soh.onlineorderflag = 1 THEN 'Online'
         ELSE 'Direct'
-	END AS Channel
+	END AS Channel,
+    YEAR(soh.orderdate) metai,
+    QUARTER(soh.orderdate) ketvirtis,
+    ROUND(SUM(sod.linetotal),2) revenue
 FROM production_product pp
 LEFT JOIN production_productsubcategory ps ON pp.productsubcategoryid = ps.productsubcategoryid
 LEFT JOIN production_productcategory pc ON ps.ProductCategoryID = pc.productCategoryID
 JOIN sales_salesorderdetail sod ON pp.productID = sod.productid
 JOIN sales_salesorderheader soh ON sod.salesorderid = soh.salesorderid
 JOIN sales_salesterritory st ON soh.territoryid = st.territoryid
-GROUP BY pp.productid, pp.name, ps.name, pc.name, st.name, channel
-ORDER BY pp.productid, channel;
+GROUP BY pc.productcategoryid, category, territory, channel, metai, ketvirtis;
+
+
 -- 2. Apskaičiuok bendras pajamas bei runningtotal kiekvienai kategorijai pagal metus ir ketvirčius.
 SELECT
     PC.Name AS Category,
