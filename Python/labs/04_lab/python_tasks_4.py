@@ -57,14 +57,46 @@ print(change)
 # Task 6: Create a function that takes lists of revenue and expenses and returns 
 # the net profit for each period (profit − expenses).
 
-def net_profit(profits, expenses):
+def net_profit(revenue, expenses):
     result = []
-    for i in range(len(profits)):
-        result.append(profits[i] - expenses[i])
+    for i in range(len(revenue)):
+        result.append(revenue[i] - expenses[i])
     return result
 
-profit = [2500, 2400, 5000]
+revenue = [2500, 2400, 5000]
 expenses = [840, 1400, 2800]
 
-result = net_profit(profit, expenses)
+result = net_profit(revenue, expenses)
 print(result)
+
+
+# Task 7: Write a function that counts how many times the value 'inactive' appears
+# in a given list of user statuses.
+
+def inactive_count(statuses):
+    return statuses.count('inactive')
+
+user_statuses = ['active', 'inactive', 'inactive', 'active', 'inactive']
+result = inactive_count(user_statuses)
+print(f' active clients: {result}')
+
+
+# Task 8: Write a function that takes a dictionary of sales by region and returns 
+# the region with the highest total sales. Use max().
+
+def top_region(sales):
+    return max(sales, key=sales.get)
+
+sales = {
+    'North': 1500,
+    'South': 2700,
+    'East': 2200,
+    'West': 1800
+}
+
+result = top_region(sales)
+best_value = sales[result]
+print(f'Region with best sales is {result} {best_value}')
+
+
+# Task 9: 
