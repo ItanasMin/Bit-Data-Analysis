@@ -99,4 +99,37 @@ best_value = sales[result]
 print(f'Region with best sales is {result} {best_value}')
 
 
-# Task 9: 
+# Task 9: Create a function that returns True if the profit is positive (greater than 0), 
+# otherwise False.
+
+def is_profitable(profit):
+    if profit > 0:
+        return True
+    else:
+        return False
+
+print(f"Is 500 profitable? {is_profitable(500)}")
+print(f"Is -120 profitable? {is_profitable(-120)}")
+
+
+# Task 10: Create a function that takes a list of dates (as strings) and returns
+# a list of those dates as datetime objects. Use datetime.strptime().
+
+from datetime import datetime
+
+
+def convert_to_datetime(date_strings):
+    datetime_objects = []
+    date_format = "%Y-%m-%d"
+    
+    for date_str in date_strings:
+        obj = datetime.strptime(date_str, date_format)
+        datetime_objects.append(obj)
+    return datetime_objects
+
+raw_dates = ["2026-01-01", "2026-02-14", "2026-12-25"]
+clean_dates = convert_to_datetime(raw_dates)
+
+print(f"Original: {raw_dates}")
+print(f"Converted: {clean_dates}")
+print(f"Type of first element: {type(clean_dates[0])}")
