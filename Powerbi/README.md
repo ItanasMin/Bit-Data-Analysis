@@ -13,6 +13,8 @@ A comprehensive report designed to provide a 360-degree view of business perform
   - **Interactivity:** Integrated **Bookmarks** for custom views, **Navigation** buttons, and **Drill-through** for deep-dive analysis.
   - **Data Source:** Integrated and cleaned data from multiple sources using **Power Query**.
 
+![Sales Overview Dashboard](sales_overview.png)
+
 ### 🔑 Key DAX Measures & Business Logic
 In this project, I focused on creating complex business metrics to track performance against goals. I implemented a dedicated `_measures` table for better model organization.
 
