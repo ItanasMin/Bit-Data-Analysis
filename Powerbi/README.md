@@ -13,6 +13,14 @@ A comprehensive report designed to provide a 360-degree view of business perform
   - **Interactivity:** Integrated **Bookmarks** for custom views, **Navigation** buttons, and **Drill-through** for deep-dive analysis.
   - **Data Source:** Integrated and cleaned data from multiple sources using **Power Query**.
 
+### 🔑 Key DAX Measures & Business Logic
+In this project, I focused on creating complex business metrics to track performance against goals. I implemented a dedicated `_measures` table for better model organization.
+
+**Developed Metrics Include:**
+- **Financial Growth:** `Sales YTD` (Year-to-Date), `Sales LY` (Last Year), and `YoY %` to track annual growth trends.
+- **Budget Performance:** `Total Budget`, `Sales vs Budget`, and `vs Budget %` to monitor variance and target achievement.
+- **Operational Efficiency:** `Unique Products Sold`, `Total Quantity`, and `Customers` count to analyze market reach and product performance.
+
 ### 2. Sakila DB: SQL-to-Dashboard Workflow
 A project focused on the synergy between database querying and visualization.
 - **Workflow:** - Wrote complex SQL queries to extract relational data from the MySQL Sakila database.
