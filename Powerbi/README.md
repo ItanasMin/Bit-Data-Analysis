@@ -13,7 +13,21 @@ A comprehensive report designed to provide a 360-degree view of business perform
   - **Interactivity:** Integrated **Bookmarks** for custom views, **Navigation** buttons, and **Drill-through** for deep-dive analysis.
   - **Data Source:** Integrated and cleaned data from multiple sources using **Power Query**.
 
-![Sales Overview Dashboard](sales_overview.png)
+  ### 📊 Project Insights
+* **Executive Overview:** High-level KPIs tracking Sales vs Budget and YoY growth.
+* **Customer Intelligence:** Deep dive into demographics and top-performing segments.
+* **Product Performance:** Analysis of sales volume and profitability across categories.
+* **Granular Details:** Ability to drill down into specific product performance and trends.
+
+| Overview | Customers |
+|---|---|
+| ![Overview](sales_overview.png) | ![Customers](customers.png) |
+
+| Products | Product Details |
+|---|---|
+| ![Products](products.png) | ![Details](details.png) |
+
+
 
 ### 🔑 Key DAX Measures & Business Logic
 In this project, I focused on creating complex business metrics to track performance against goals. I implemented a dedicated `_measures` table for better model organization.
