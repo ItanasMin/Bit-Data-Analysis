@@ -44,7 +44,7 @@ In this project, I bridged the gap between my sales experience and data analytic
 ---
 
 ## 📫 Connect with me
-- **LinkedIn:** [Link to your profile]
+- **LinkedIn:** [itanas-minkevicius]
 - **Email:** itanas.min@gmail.com
 - **Location:** Vilnius, Lithuania
 
