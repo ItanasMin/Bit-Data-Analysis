@@ -1,6 +1,6 @@
 # 📊 Itanas Minkevičius | Data Analytics Portfolio
 
-Welcome to my data analytics repository! I am a **Business Data Analyst** (in training) with a background in sales operations and a passion for turning raw data into strategic business insights. 
+Welcome to my data analytics repository! I am a **Data Analyst** (in training) with a background in sales operations and a passion for turning raw data into strategic business insights. 
 
 This repository showcases my technical journey through SQL, Python, Power BI, and Statistics.
 
