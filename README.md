@@ -17,19 +17,19 @@ This repository showcases my technical journey through SQL, Python, Power BI, an
 
 ## 📂 Repository Structure
 
-### [🔍 SQL Mastery](./SQL_folder_name)
+### [🔍 SQL Mastery](./SQL)
 Advanced querying and database management. 
 - **Highlights:** KPI calculations in AdventureWorks 2019, complex joins in Sakila DB, and query optimization.
 
-### [🐍 Python for Data Science](./Python_folder_name)
+### [🐍 Python for Data Science](./Python)
 End-to-end data processing and exploratory analysis.
 - **Highlights:** Automated data cleaning, outlier detection (IQR), and integration with SQL databases.
 
-### [📈 Power BI Dashboards](./PowerBI_folder_name)
+### [📈 Power BI Dashboards](./Powerbi)
 Interactive business intelligence solutions.
 - **Highlights:** Sales Analysis Reports with DAX measures (YTD, YoY Growth) and dynamic navigation features.
 
-### [📊 Business Statistics](./Statistics_folder_name)
+### [📊 Business Statistics](./statistics)
 Mathematical foundations for reliable decision-making.
 - **Highlights:** A/B Testing, Confidence Intervals, and Descriptive Analytics.
 
@@ -44,7 +44,7 @@ In this project, I bridged the gap between my sales experience and data analytic
 ---
 
 ## 📫 Connect with me
-- **LinkedIn:** [itanas-minkevicius]
+- **LinkedIn:** [itanas-minkevicius](https://www.linkedin.com/in/itanas-minkevi%C4%8Dius-245217266/)
 - **Email:** itanas.min@gmail.com
 - **Location:** Vilnius, Lithuania
 
